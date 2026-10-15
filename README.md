@@ -1,5 +1,8 @@
 # Chip Intel MCP
 
+**Live MCP URL (Streamable HTTP):** `https://chip-intel-mcp.vercel.app/mcp`  
+Health check: `https://chip-intel-mcp.vercel.app/health`
+
 An MCP server for AI-chip research. It provides:
 
 - **Cited specs** for GPUs and AI accelerators.
