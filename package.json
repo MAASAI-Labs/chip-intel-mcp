@@ -1,0 +1,47 @@
+{
+  "name": "chip-intel-mcp",
+  "version": "1.0.0",
+  "description": "MCP server: cited AI-accelerator specs and comparisons, foundry process-node map, US export-control screening (Consolidated Screening List), chip company SEC filings and news.",
+  "main": "dist/main-http.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main-http.js",
+    "start:stdio": "node dist/main-stdio.js",
+    "dev": "tsx src/main-http.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke.mjs",
+    "verify-sources": "tsx scripts/verify-sources.ts"
+  },
+  "keywords": [
+    "mcp",
+    "semiconductors",
+    "gpu",
+    "ai-accelerators",
+    "export-controls",
+    "tsmc"
+  ],
+  "author": "Segun Cole",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "csv-parse": "^7.0.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "chip-intel-mcp": "dist/main-stdio.js"
+  }
+}
